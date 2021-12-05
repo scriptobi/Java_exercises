@@ -1,6 +1,6 @@
 package exercices;
 
-public class exo1b {
+public class Exo1b {
     /*
         Maintenant on remplace juste int y = x++; par int y = ++x;
         Que vaut la variable y ?

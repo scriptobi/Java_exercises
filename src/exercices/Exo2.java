@@ -1,12 +1,13 @@
 package exercices;
 
-public class exo2 {
+public class Exo2 {
     /*
         On veut convertir explicitement une valeur en forçant la transformation.
         Syntaxe: <NomVariable> = (<Type>)<NomVariable>;
         Soit:
             int i = 0;
             float y = 0;
+        Quelle est l'instruction à utiliser pour convertir i en float et stocké le résultat dans la variable y ?
      */
     public static void main(String args[]) {
         int i = 0; System.out.println("Org type de i: " + ((Object)i).getClass().getSimpleName());

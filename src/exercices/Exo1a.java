@@ -1,6 +1,6 @@
 package exercices;
 
-public class exo1a {
+public class Exo1a {
     /*
         Dans le code suivant:
             int = 34;
