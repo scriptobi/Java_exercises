@@ -26,13 +26,16 @@ public class Exo5 {
     }
 
     public Exo5(int nbLines) {
-
          for(int curLine = 0 ;curLine < nbLines; curLine++) {
             String line = "";
+            /*
             int nbSpaces = nbLines - curLine - 1;
             int nbStars = curLine * 2 + 1;
             for(int i = 0; i < nbSpaces; i++) line += " ";
             for(int j = 0; j < nbStars; j++) line += "*";
+             */
+            for(int i = 0; i < nbLines - curLine - 1; i++) line += " ";
+            for(int j = 0; j < curLine * 2 - 1; j++) line += "*";
 
             System.out.println(line);
         }
