@@ -1,5 +1,7 @@
 package exercices;
 
+import java.util.Scanner;
+
 public class Exo5 {
     /*
         Ecrire un programme permettant d'afficher le triagle d'étoiles suivant:
@@ -26,6 +28,7 @@ public class Exo5 {
     }
 
     public Exo5(int nbLines) {
+        nbLines = getInput();
          for(int curLine = 0 ;curLine < nbLines; curLine++) {
             String line = "";
             /*
@@ -39,5 +42,23 @@ public class Exo5 {
 
             System.out.println(line);
         }
+    }
+
+    private int getInput() {
+        int lines = 0;
+        boolean entryIsValid = false;
+
+        try(Scanner sc = new Scanner(System.in)) {
+            while (!entryIsValid) {
+                try {
+                    lines = Integer.parseInt(sc.nextLine());
+                    if (lines > 0) entryIsValid = true;
+                    else System.out.println(("Le nombre de ligne doit être supérieur à 0 !\nRecommencez."));
+                } catch (NumberFormatException e) {
+                    System.out.println("Entrée invalide !\nRecommencez.");
+                }
+            }
+        }
+        return lines;
     }
 }

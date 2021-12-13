@@ -1,5 +1,7 @@
 package exercices;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -51,5 +53,11 @@ public class Exo8 {
         } while(i < j);
 
         System.out.println(String.format("%s %s un palindrome.", entry, match ? "est" : "n'est pas"));
+    }
+
+    private void doMethode02(String entry) {/*
+        System.out.println("Méthode par Collections.reverse():");
+        List<String> liste = new ArrayList<String>(entry.)
+        // */
     }
 }

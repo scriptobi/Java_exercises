@@ -29,7 +29,7 @@ public class Exo7 {
                     if(days > 0) validEntry = true;
                     else System.out.println(("Le nombre de jour ne peut être inférieur à 0.\nRecommencez."));
                 } catch (NumberFormatException e) {
-                    System.out.println(("Entrée invalide !\nRecommencez."));
+                    System.out.println("Entrée invalide !\nRecommencez.");
                 }
             }
         }
