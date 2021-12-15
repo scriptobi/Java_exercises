@@ -20,6 +20,7 @@ public class Exo8 {
     public Exo8() {
         String entry = getString();
         doMethode01(entry);
+        doMethode02(entry);
     }
 
     private String getString() {
@@ -55,9 +56,11 @@ public class Exo8 {
         System.out.println(String.format("%s %s un palindrome.", entry, match ? "est" : "n'est pas"));
     }
 
-    private void doMethode02(String entry) {/*
+    private void doMethode02(String entry) {
         System.out.println("Méthode par Collections.reverse():");
-        List<String> liste = new ArrayList<String>(entry.)
+        StringBuilder sbEntry = new StringBuilder(entry);
+        StringBuilder sbYrtne = (new StringBuilder(sbEntry)).reverse();
+        System.out.println(String.format("%s %s un palindrôme",sbEntry, sbEntry.toString().equals(sbYrtne.toString()) ? "est" : "n'est pas"));
         // */
     }
 }
